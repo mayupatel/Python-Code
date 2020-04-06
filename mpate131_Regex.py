@@ -11,22 +11,22 @@ import re
 
 # this function checks the string validate.
 def searchHead(string):
-	charRe = re.compile(r'[^a-zA-Z0-9.]')
+    charRe = re.compile(r'[^a-zA-Z0-9.]')
     string = charRe.search(string)
     if not bool(string):
     	print("True")
     else:
         print("False")
 
-   #exit the function by printing the boolean.
+    #exit the function by printing the boolean.
 
 
 #2.Write a Python program that matches a string that has an a followed by zero or more b's
 
 # this function checks for pattern as needed.
 def searchText(a):
-	char = "ab*?"
-    if re.search(char,  a):
+    char = "ab*?"
+    if re.search(char, a):
         print("Pattern Match")
     else:
         print('Pattern Not Match')
@@ -38,11 +38,11 @@ def searchText(a):
 
 # this function checks for pattern as needed.
 def text_match(b):
-	char = "ab+?"
-	if re.search(char,  a):
-    	print("Yes, Match Found")
-  	else:
-    	print('No Match')
+    char = "ab+?"
+    if re.search(char, a):
+        print("Yes, Match Found")
+    else:
+        print('No Match')
 
     #exit the function by printing the statement.
 
@@ -71,4 +71,4 @@ def main():
 
   
 if __name__ == "__main__":
-  main()
+    main()
