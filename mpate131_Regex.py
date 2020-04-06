@@ -50,15 +50,14 @@ def text_match(b):
 #main function handles the code flow.
 def main():
 
-	print("First Question Code")
-	seq = "gctaATCGtaagc"
-	header = ">s1#@34#!"
-	searchHead(seq) # calling the function by passing sequence
-	searchHead(header) # calling the function by passing header
+    print("First Question Code")
+    seq = "gctaATCGtaagc"
+    header = ">s1#@34#!"
+    searchHead(seq) # calling the function by passing sequence
+    searchHead(header) # calling the function by passing header
 
-
-	print("Second Question Code")
-	#each time calling a function to take different parameters.
+    print("Second Question Code")
+    #each time calling a function to take different parameters.
     searchText("abcc")
     searchText("acdef")
     searchText("bbcd")
